@@ -17,7 +17,7 @@ from models import get_model_opt
 from datasets import get_dataloader
 from trainers import get_trainer_class
 from utils import setup_logger, get_timestamp, mkdirs, get_criterion
-from options import args_parser
+from parse_args import args_parser
 
 
 def init_arguments(args):
