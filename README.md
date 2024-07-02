@@ -1,15 +1,13 @@
 # Weakly-Supervised Medical Image Segmentation with Gaze Annotations
-This is the PyTorch implementation of our MICCAI 2024 paper ["Weakly-Supervised Medical Image Segmentation with Gaze Annotations"]().
+This is the PyTorch implementation of our MICCAI 2024 paper ["Weakly-Supervised Medical Image Segmentation with Gaze Annotations"]() by Yuan Zhong, Chenhui Tang, Yumeng Yang, Ruoxi Qi, Kang Zhou, Yuqi Gong, [Pheng-Ann Heng](https://www.cse.cuhk.edu.hk/~pheng/), [Janet Hsiao\*](https://jhhsiao.people.ust.hk/), and [Qi Dou\*](https://www.cse.cuhk.edu.hk/~qdou/).
 
-Yuan Zhong, Chenhui Tang, Yumeng Yang, Ruoxi Qi, Kang Zhou, Yuqi Gong, [Pheng-Ann Heng](https://www.cse.cuhk.edu.hk/~pheng/), [Janet Hsiao](https://jhhsiao.people.ust.hk/)\*, and [Qi Dou](https://www.cse.cuhk.edu.hk/~qdou/)\* 
-
-\*: denotes corresponding authors
+\* denotes corresponding authors.
 
 ## Abstract
 
 > Eye gaze that reveals human observational patterns has increasingly been incorporated into solutions for vision tasks. Despite recent explorations on leveraging gaze to aid deep networks, few studies exploit gaze as an efficient annotation approach for medical image segmentation which typically entails heavy annotating costs. In this paper, we propose to collect dense weak supervision for medical image segmentation with a gaze annotation scheme. To train with gaze, we propose a multi-level framework that trains multiple networks from discriminative human attention, simulated with a set of pseudo-masks derived by applying hierarchical thresholds on gaze heatmaps. Furthermore, to mitigate gaze noise, a cross-level consistency is exploited to regularize overfitting noisy labels, steering models toward clean patterns learned by peer networks. The proposed method is validated on polyp and prostate segmentation tasks using two public medical datasets. Our experiments demonstrate that gaze annotation outperforms previous label-efficient annotation schemes in terms of both performance and annotation time. 
 
-## Features
+## Highlights
 
 - Public gaze data for medical image segmentation as extension for the [Kvasir-SEG](https://datasets.simula.no/kvasir-seg/) and [NCI-ISBI](https://www.cancerimagingarchive.net/analysis-result/isbi-mr-prostate-2013/) datasets.
 - A general plug-in framework for weakly-supervised medical image segmentation using gaze annotations.
@@ -58,7 +56,7 @@ We also provide the model checkpoints for the experiments as listed below (Dice 
 |           |                      Kvasir-SEG (Polyp)                      |                     NCI-ISBI (Prostate)                      |
 | :-------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | Our paper |                            77.80                             |                            77.64                             |
-| Released  | 77.67<br />[[script]](./scripts/gazesup_kvasir_2_levels.sh) [checkpoint] | 79.20<br />[[script]](./scripts/gazesup_prostate_2_levels) [checkpoint] |
+| Released  | 77.67<br />[[script]](./scripts/gazesup_kvasir_2_levels.sh) [checkpoint] | 79.20<br />[[script]](./scripts/gazesup_prostate_2_levels.py) [checkpoint] |
 
 ## Contact
 
