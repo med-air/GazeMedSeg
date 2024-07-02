@@ -1,5 +1,9 @@
 # Weakly-Supervised Medical Image Segmentation with Gaze Annotations
-This is the PyTorch implementation of our MICCAI 2024 paper ["Weakly-Supervised Medical Image Segmentation with Gaze Annotations"]() by Yuan Zhong, Chenhui Tang, Yumeng Yang, Ruoxi Qi, Kang Zhou, Yuqi Gong, [Pheng-Ann Heng](https://www.cse.cuhk.edu.hk/~pheng/), [Janet Hsiao](https://jhhsiao.people.ust.hk/)\*, and [Qi Dou](https://www.cse.cuhk.edu.hk/~qdou/)\* (\* denotes corresponding authors).
+This is the PyTorch implementation of our MICCAI 2024 paper ["Weakly-Supervised Medical Image Segmentation with Gaze Annotations"]().
+
+Yuan Zhong, Chenhui Tang, Yumeng Yang, Ruoxi Qi, Kang Zhou, Yuqi Gong, [Pheng-Ann Heng](https://www.cse.cuhk.edu.hk/~pheng/), [Janet Hsiao](https://jhhsiao.people.ust.hk/)\*, and [Qi Dou](https://www.cse.cuhk.edu.hk/~qdou/)\* 
+
+\*: denotes corresponding authors
 
 ## Abstract
 
@@ -7,7 +11,7 @@ This is the PyTorch implementation of our MICCAI 2024 paper ["Weakly-Supervised 
 
 ## Features
 
-- Publicly available gaze data for medical image segmentation as extension for the [Kvasir-SEG](https://datasets.simula.no/kvasir-seg/) and [NCI-ISBI](https://www.cancerimagingarchive.net/analysis-result/isbi-mr-prostate-2013/) datasets.
+- Public gaze data for medical image segmentation as extension for the [Kvasir-SEG](https://datasets.simula.no/kvasir-seg/) and [NCI-ISBI](https://www.cancerimagingarchive.net/analysis-result/isbi-mr-prostate-2013/) datasets.
 - A general plug-in framework for weakly-supervised medical image segmentation using gaze annotations.
 
 ## Gaze Dataset
@@ -40,12 +44,16 @@ Coming soon.
 
 ```bash
 python run.py -m [supervision_mode] --data [dataset] --model [backbone] -bs [batch_size] \
-    --exp_path [experiment_path] --root [dataset_path] --spatial_size [image_size] --in_channels [image_channels] \
-    --opt [optimizer] --lr [base_lr] --max_ite [maximum_iterations] --num_levels [num_levels] \
-    --cons_mode [cons_mode] --cons_weight [cons_weight]
+    --exp_path [experiment_path] --root [dataset_path] --spatial_size [image_size] \
+    --in_channels [image_channels] --opt [optimizer] --lr [base_lr] --max_ite [max_ite] \
+    --num_levels [num_levels] --cons_mode [cons_mode] --cons_weight [cons_weight]
 ```
 
-We provide the scripts of reproducing our experiments on the Kvasir-SEG and NCI-ISBI datasets with our gaze annotation [here](.\scripts). For more details on the arguments, please refer to [parse_args.py](.\parse_args.py). We also provide the model checkpoints for the experiments as listed below (Dice is the evaluation metric).
+We provide the scripts of reproducing our experiments on the Kvasir-SEG and NCI-ISBI datasets with our gaze annotation [here](./scripts). For more details on the arguments, please refer to [parse_args.py](./parse_args.py). 
+
+#### Checkpoints
+
+We also provide the model checkpoints for the experiments as listed below (Dice is the evaluation metric).
 
 |           |                      Kvasir-SEG (Polyp)                      |                     NCI-ISBI (Prostate)                      |
 | :-------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
