@@ -1,5 +1,5 @@
-# Weakly-Supervised Medical Image Segmentation with Gaze Annotations
-This is the PyTorch implementation of our MICCAI 2024 paper ["Weakly-Supervised Medical Image Segmentation with Gaze Annotations"]() by Yuan Zhong, Chenhui Tang, Yumeng Yang, Ruoxi Qi, Kang Zhou, Yuqi Gong, [Pheng-Ann Heng](https://www.cse.cuhk.edu.hk/~pheng/), [Janet H. Hsiao\*](https://jhhsiao.people.ust.hk/), and [Qi Dou\*](https://www.cse.cuhk.edu.hk/~qdou/).
+# Weakly-supervised Medical Image Segmentation with Gaze Annotations
+This is the PyTorch implementation of our MICCAI 2024 paper ["Weakly-supervised Medical Image Segmentation with Gaze Annotations"]() by Yuan Zhong, Chenhui Tang, Yumeng Yang, Ruoxi Qi, Kang Zhou, Yuqi Gong, [Pheng-Ann Heng](https://www.cse.cuhk.edu.hk/~pheng/), [Janet H. Hsiao\*](https://jhhsiao.people.ust.hk/), and [Qi Dou\*](https://www.cse.cuhk.edu.hk/~qdou/).
 
 \* denotes corresponding authors.
 
@@ -16,7 +16,7 @@ This is the PyTorch implementation of our MICCAI 2024 paper ["Weakly-Supervised 
 
 ## Gaze Dataset
 
-Please refer to here for detailed description of our GazeMedSeg dataset.
+Please refer to [here](/gaze) for detailed description of our GazeMedSeg dataset.
 
 ## Getting Started
 
@@ -38,7 +38,10 @@ Please refer to here for detailed description of our GazeMedSeg dataset.
 
 #### Preparing Datasets
 
+>Note: You can download our preprocessed dataset [here](https://drive.google.com/drive/folders/1XjgQ27R8zT8ymOTXohgl8HXntPEUbIXj?usp=sharing), allowing you to skip this and the next step to reproduce our experiments.
 
+- Download the [Kvasir-SEG](https://datasets.simula.no/kvasir-seg/) and [NCI-ISBI](https://www.cancerimagingarchive.net/analysis-result/isbi-mr-prostate-2013/) datasets from their official websites. For NCI-ISBI, please download the Training and Test sets.
+- Preprocess the datasets. We only preprocess the NCI-ISBI dataset, extracting axial slices where the prostate is present. The relevant script is [here](/notebooks/gaze_annotation/process_nci-isbi.ipynb).
 
 #### Preparing Gaze Annotation
 
@@ -62,7 +65,7 @@ We also provide the model checkpoints for the experiments as listed below (Dice 
 |           |                      Kvasir-SEG (Polyp)                      |                     NCI-ISBI (Prostate)                      |
 | :-------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | Our paper |                            77.80                             |                            77.64                             |
-| Released  | 77.67<br />[[script]](./scripts/gazesup_kvasir_2_levels.sh) [checkpoint] | 79.20<br />[[script]](./scripts/gazesup_prostate_2_levels.sh) [checkpoint] |
+| Released  | 78.86<br />[[script]](./scripts/gazesup_kvasir_2_levels.sh) [[checkpoint]](https://drive.google.com/file/d/1e-P7TEOIDJ04edFy1Eix8bTl5ZRD3l-g/view?usp=sharing) | 79.20<br />[[script]](./scripts/gazesup_prostate_2_levels.sh) [[checkpoint]](https://drive.google.com/file/d/1wq60hlEPFhotwPM5tCxcFK-hjPBZ842L/view?usp=sharing) |
 
 ## Contact
 
@@ -70,4 +73,5 @@ If you have any questions, please feel free to leave issues here, or contact [Yu
 
 ## Citation
 
-Coming soon.
+``` -->
+Coming soon
