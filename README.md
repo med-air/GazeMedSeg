@@ -56,7 +56,7 @@ We also provide the model checkpoints for the experiments as listed below (Dice 
 |           |                      Kvasir-SEG (Polyp)                      |                     NCI-ISBI (Prostate)                      |
 | :-------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | Our paper |                            77.80                             |                            77.64                             |
-| Released  | 77.67<br />[[script]](./scripts/gazesup_kvasir_2_levels.sh) [checkpoint] | 79.20<br />[[script]](./scripts/gazesup_prostate_2_levels.py) [checkpoint] |
+| Released  | 77.67<br />[[script]](./scripts/gazesup_kvasir_2_levels.sh) [checkpoint] | 79.20<br />[[script]](./scripts/gazesup_prostate_2_levels.sh) [checkpoint] |
 
 ## Contact
 
