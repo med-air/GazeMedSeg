@@ -41,11 +41,12 @@ Please refer to [here](/gaze) for detailed description of our GazeMedSeg dataset
 >Note: You can download our preprocessed dataset [here](https://drive.google.com/drive/folders/1XjgQ27R8zT8ymOTXohgl8HXntPEUbIXj?usp=sharing), allowing you to skip this and the next step to reproduce our experiments.
 
 - Download the [Kvasir-SEG](https://datasets.simula.no/kvasir-seg/) and [NCI-ISBI](https://www.cancerimagingarchive.net/analysis-result/isbi-mr-prostate-2013/) datasets from their official websites. For NCI-ISBI, please download the Training and Test sets.
-- Preprocess the datasets. We only preprocess the NCI-ISBI dataset, extracting axial slices where the prostate is present. The relevant script is [here](/notebooks/gaze_annotation/process_nci-isbi.ipynb).
+- Preprocess the datasets. We only preprocess the NCI-ISBI dataset, extracting axial slices where the prostate is present. The relevant script is [here](/notebooks/preprocess/process_nci-isbi.ipynb).
 
 #### Preparing Gaze Annotation
 
-Coming soon.
+- Download the GazeMedSeg [here](https://drive.google.com/drive/folders/1-38bG_81OsGVCb_trI00GSqfB_shCUQG?usp=sharing), and put the files under the [`/GazeMedSeg`](/GazeMedSeg) folder.
+- Generate gaze heatmaps and refined CRF maps using the scripts [here](notebooks/gaze_annotation). These scripts will create a *gaze* folder within the original dataset directory and generate gaze heatmaps and CRF maps there. The CRF maps will serve as pseudo-masks for gaze supervision.
 
 #### Running Experiments
 
