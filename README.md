@@ -16,7 +16,7 @@ This is the PyTorch implementation of our MICCAI 2024 paper ["Weakly-supervised 
 
 ## Gaze Dataset
 
-Please refer to [here](/gaze) for detailed description of our GazeMedSeg dataset.
+Please refer to [here](/GazeMedSeg) for detailed description of our GazeMedSeg dataset.
 
 ## Getting Started
 
