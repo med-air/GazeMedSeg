@@ -11,7 +11,7 @@ This is the PyTorch implementation of our MICCAI 2024 paper ["Weakly-Supervised 
 
 ## Highlights
 
-- Public gaze dataset **GazeMedSeg** for medical image segmentation as extension for the [Kvasir-SEG](https://datasets.simula.no/kvasir-seg/) and [NCI-ISBI](https://www.cancerimagingarchive.net/analysis-result/isbi-mr-prostate-2013/) datasets.
+- Public gaze dataset **GazeMedSeg** for segmentation as extension for the [Kvasir-SEG](https://datasets.simula.no/kvasir-seg/) and [NCI-ISBI](https://www.cancerimagingarchive.net/analysis-result/isbi-mr-prostate-2013/) datasets.
 - A general plug-in framework for weakly-supervised medical image segmentation using gaze annotations.
 
 ## Gaze Dataset
@@ -35,6 +35,10 @@ Please refer to here for detailed description of our GazeMedSeg dataset.
    conda env create -f environment.yaml
    conda activate gaze
    ```
+
+#### Preparing Datasets
+
+
 
 #### Preparing Gaze Annotation
 
