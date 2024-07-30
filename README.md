@@ -1,5 +1,5 @@
 # Weakly-supervised Medical Image Segmentation with Gaze Annotations
-This is the PyTorch implementation of our MICCAI 2024 paper ["Weakly-supervised Medical Image Segmentation with Gaze Annotations"]() by Yuan Zhong, Chenhui Tang, Yumeng Yang, Ruoxi Qi, Kang Zhou, Yuqi Gong, [Pheng-Ann Heng](https://www.cse.cuhk.edu.hk/~pheng/), [Janet H. Hsiao\*](https://jhhsiao.people.ust.hk/), and [Qi Dou\*](https://www.cse.cuhk.edu.hk/~qdou/).
+This is the PyTorch implementation of our MICCAI 2024 paper ["Weakly-supervised Medical Image Segmentation with Gaze Annotations"](https://arxiv.org/abs/2407.07406) by Yuan Zhong, Chenhui Tang, Yumeng Yang, Ruoxi Qi, Kang Zhou, Yuqi Gong, [Pheng-Ann Heng](https://www.cse.cuhk.edu.hk/~pheng/), [Janet H. Hsiao\*](https://jhhsiao.people.ust.hk/), and [Qi Dou\*](https://www.cse.cuhk.edu.hk/~qdou/).
 
 \* denotes corresponding authors.
 
@@ -75,4 +75,9 @@ If you have any questions, please feel free to leave issues here, or contact [Yu
 ## Citation
 
 ``` -->
-Coming soon
+@article{zhong2024weakly,
+  title={Weakly-supervised Medical Image Segmentation with Gaze Annotations},
+  author={Zhong, Yuan and Tang, Chenhui and Yang, Yumeng and Qi, Ruoxi and Zhou, Kang and Gong, Yuqi and Heng, Pheng Ann and Hsiao, Janet H and Dou, Qi},
+  journal={International Conference on Medical Image Computing and Computer Assisted Intervention},
+  year={2024}
+}
